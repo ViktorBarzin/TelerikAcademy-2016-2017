@@ -12,7 +12,7 @@ namespace _13.ModifyBit
 
             string asBits = Convert.ToString(number, 2);
             asBits = asBits.PadLeft(n + 1, '0');
-            Console.WriteLine(asBits);
+            
             char[] asBitsChar = asBits.ToCharArray();
 
             asBitsChar[asBitsChar.Length - (n + 1)] = newBit[0];

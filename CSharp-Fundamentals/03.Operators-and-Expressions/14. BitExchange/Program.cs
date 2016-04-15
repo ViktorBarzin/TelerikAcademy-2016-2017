@@ -12,8 +12,7 @@ namespace _14.BitExchange
         {
             int input = int.Parse(Console.ReadLine());
             string inputBinary = Convert.ToString(input, 2);
-
-            Console.WriteLine(inputBinary);
+            
             for (int i = 3; i < 6; i++)
             {
                 int lowerBit = GetBitAt(i, input);
