@@ -16,7 +16,7 @@ namespace _2.Even_Differences
             {
                 if (Math.Abs(numbers[i] - numbers[i-1]) % 2 == 0)
                 {
-                    
+                    Console.WriteLine(1);
                 }
             }
         }
