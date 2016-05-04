@@ -22,12 +22,12 @@ namespace _09.FrequentNumber
 
             int maxOccurences = 1;
             int maxNumber = numbers[0];
-            
-            for (int i = 0; i < numbers.Count-1; i++)
+
+            for (int i = 0; i < numbers.Count - 1; i++)
             {
                 int current = 1;
                 int j = i;
-                while (j < numbers.Count-1 && numbers[j] == numbers[j+1])
+                while (j < numbers.Count - 1 && numbers[j] == numbers[j + 1])
                 {
                     current++;
                     j++;
@@ -40,7 +40,7 @@ namespace _09.FrequentNumber
                 }
             }
 
-            Console.WriteLine("{0} ({1} times)",maxNumber,maxOccurences);
+            Console.WriteLine("{0} ({1} times)", maxNumber, maxOccurences);
         }
     }
 }
