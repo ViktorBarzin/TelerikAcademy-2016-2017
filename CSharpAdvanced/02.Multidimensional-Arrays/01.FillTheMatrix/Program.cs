@@ -50,7 +50,6 @@ namespace _01.FillTheMatrix
                             for (int col = matrix.GetLength(0) - 1; col >= 0; col--)
                             {
                                 matrix[col, row] = counterB++;
-
                             }
                         }
 
@@ -59,8 +58,33 @@ namespace _01.FillTheMatrix
                     Print(matrix);
                     break;
                 case 'c':
+                    int counter = 1;
+
+                    // Print lower left side
+
+                    for (int row = matrix.GetLength(0) - 1; row >= 0; row--)
+                    {
+                        for (int col = 0; col < matrix.GetLength(0) - row; col++)
+                        {
+                            matrix[row + col, col] = counter++;
+                        }
+                    }
+
+                    // Print upper right side
+
+                    for (int row = 0; row < matrix.GetLength(0) - 1; row++)
+                    {
+                        for (int col = 1; col < matrix.GetLength(1) - row; col++)
+                        {
+                            matrix[col - 1, col + row] = counter++;
+                        }
+                    }
+
+                    Print(matrix);
                     break;
                 case 'd':
+
+                    Print(matrix);
                     break;
                 default:
                     break;
