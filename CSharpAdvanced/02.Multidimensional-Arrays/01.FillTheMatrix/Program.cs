@@ -83,6 +83,33 @@ namespace _01.FillTheMatrix
                     Print(matrix);
                     break;
                 case 'd':
+                    int counterD = 1;
+
+                    // Add left side to down
+
+                    for (int bottomRow = 0; bottomRow < 1; bottomRow++)
+                    {
+                        for (int bottomCol = 0; bottomCol < matrix.GetLength(1); bottomCol++)
+                        {
+                            matrix[bottomCol, bottomRow] = counterD++;
+                        }
+                    }
+
+                    // Add bottom side to right
+
+                    for (int bottomRow = 0; bottomRow < 1; bottomRow++)
+                    {
+                        for (int bottomCol = 0; bottomCol < matrix.GetLength(1) - 1; bottomCol++)
+                        {
+                            matrix[matrix.GetLength(0) - 1, bottomCol + 1] = counterD++;
+                        }
+                    }
+
+                    // Add right side to up
+
+
+                    // TODO : add d point
+                    //Add top side to left
 
                     Print(matrix);
                     break;
