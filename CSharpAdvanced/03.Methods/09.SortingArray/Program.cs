@@ -6,34 +6,32 @@ using System.Threading.Tasks;
 
 namespace _09.SortingArray
 {
-    using System.CodeDom.Compiler;
-
     class Program
     {
         static void Main(string[] args)
         {
             Console.ReadLine();
-            int[] numbers =
+            double[] numbers =
                 Console.ReadLine()
                        .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
-                       .Select(int.Parse)
+                       .Select(double.Parse)
                        .ToArray();
 
             Sort(numbers);
             Console.WriteLine(string.Join(" ", numbers.Reverse()));
         }
 
-        private static void Sort(IList<int> numbers)
+        private static void Sort(IList<double> numbers)
         {
-            for (int i = 0; i < numbers.Count - 1; i++)
+            for (int i = 0; i < numbers.Count; i++)
             {
                 Swap(numbers,i,numbers.IndexOf(GetMaxElementFromCollection(numbers, i, numbers.Count - 1)));
             }
         }
 
-        private static int GetMaxElementFromCollection(IList<int> numbers, int startIndex, int endIndex)
+        private static double GetMaxElementFromCollection(IList<double> numbers, int startIndex, int endIndex)
         {
-            int max = int.MinValue;
+            double max = double.MinValue;
             for (int i = startIndex; i <= endIndex; i++)
             {
                 if (numbers[i] > max)
@@ -45,9 +43,9 @@ namespace _09.SortingArray
             return max;
         }
 
-        private static void Swap(IList<int> numbers, int indexA, int indexB)
+        private static void Swap(IList<double> numbers, int indexA, int indexB)
         {
-            int temp = numbers[indexA];
+            double temp = numbers[indexA];
             numbers[indexA] = numbers[indexB];
             numbers[indexB] = temp;
         }
