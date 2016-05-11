@@ -82,6 +82,7 @@ namespace _01.FillTheMatrix
 
                     Print(matrix);
                     break;
+                    // TODO : d
                 case 'd':
                     int counterD = 1;
 

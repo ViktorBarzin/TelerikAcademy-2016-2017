@@ -10,6 +10,7 @@ namespace _02.MaximalSum
     {
         static void Main(string[] args)
         {
+            // TODO : 80/100 fix :(
             // Read input
             int[] nAndM = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int n = nAndM[0];
@@ -26,8 +27,8 @@ namespace _02.MaximalSum
             }
 
             // Find sum
-            int maxSum = 0;
-            int currentSum = 0;
+            int maxSum = int.MinValue;
+            int currentSum = int.MinValue;
 
             for (int row = 0; row < matrix.GetLength(0) - 2; row++)
             {
