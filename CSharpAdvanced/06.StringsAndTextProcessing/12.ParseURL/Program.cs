@@ -30,7 +30,7 @@ namespace _12.ParseURL
                   .Append("[server] = ")
                   .Append(server + "\n")
                   .Append("[resource] = ")
-                  .Append(resource);
+                  .Append(resource + "\n");
             return result.ToString();
         }
     }
