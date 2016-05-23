@@ -10,29 +10,29 @@ namespace _08.ExtractSentences
     {
         static void Main(string[] args)
         {
-            // TODO : 40/100 fix
-            string wordToSearch = Console.ReadLine();
+            // TODO : 90/100 fix
+            string wordToSearch = Console.ReadLine().ToLower();
             string input = Console.ReadLine();
 
-            Console.WriteLine(Extract(input,wordToSearch));
+            Console.WriteLine(Extract(input, wordToSearch));
         }
 
         public static string Extract(string str, string keyword)
         {
             string[] arr = str.Split('.');
-            string answer = string.Empty;
-
-            foreach (string sentence in arr)
+            StringBuilder answer = new StringBuilder();
+            char[] separators = GetSeparators(str);
+            foreach (string sentence in from sentence in arr let words = sentence.ToLower().Split(separators).ToArray() let isMatch = words.Any(x => x == keyword) where isMatch select sentence)
             {
-                //Add any other required punctuation characters for splitting words in the sentence
-                string[] words = sentence.Split(new char[] { ' ', ',','\\','\n','\t',':',';','@','!','?' });
-                if (words.Contains(keyword))
-                {
-                    answer += sentence + ".";
-                }
+                answer.Append(sentence + ".");
             }
 
-            return answer;
+            return answer.ToString();
+        }
+
+        private static char[] GetSeparators(string text)
+        {
+            return text.Where(x => !char.IsLetter(x) && x != '.').Distinct().ToArray();
         }
     }
 }
