@@ -27,7 +27,7 @@ namespace _02.EnterNumbers
                     throw new ArgumentException();
                 }
 
-                Console.WriteLine(string.Join("<",numbers));
+                Console.WriteLine("1 < " + string.Join(" < ",numbers) + " < 100");
             }
             catch (Exception)
             {
@@ -40,7 +40,7 @@ namespace _02.EnterNumbers
         {
             for (int i = 1; i < numbers.Count; i++)
             {
-                if (numbers[i - 1].CompareTo(numbers[i]) == 1)
+                if (numbers[i - 1].CompareTo(numbers[i]) != -1)
                 {
                     return false;
                 }
