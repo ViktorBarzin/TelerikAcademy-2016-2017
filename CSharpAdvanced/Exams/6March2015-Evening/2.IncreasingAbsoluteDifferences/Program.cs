@@ -20,8 +20,8 @@ namespace _2.IncreasingAbsoluteDifferences
         {
             for (int i = 0; i < numberOfSequences; i++)
             {
-                List<double> sequence = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
-                List<double> absoluteDifferences = new List<double>();
+                List<long> sequence = Console.ReadLine().Split(' ').Select(long.Parse).ToList();
+                List<long> absoluteDifferences = new List<long>();
 
                 for (int j = 0; j < sequence.Count - 1; j++)
                 {
@@ -32,11 +32,11 @@ namespace _2.IncreasingAbsoluteDifferences
             }
         }
 
-        private static bool IsNonDecreasing(IList<double> numbers)
+        private static bool IsNonDecreasing(IList<long> numbers)
         {
             for (int i = 0; i < numbers.Count-1; i++)
             {
-                if (numbers[i] > numbers[i+1])
+                if (numbers[i] > numbers[i+1] || Math.Abs(numbers[i]-numbers[i+1]) > 1)
                 {
                     return false;
                 }

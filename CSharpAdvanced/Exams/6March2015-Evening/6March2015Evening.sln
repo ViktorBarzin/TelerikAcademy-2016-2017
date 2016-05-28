@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.De-catCoding", "1.De-catC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.IncreasingAbsoluteDifferences", "2.IncreasingAbsoluteDifferences\2.IncreasingAbsoluteDifferences.csproj", "{F897388C-5A17-4083-92B3-6C418221211E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitShiftMatrix", "BitShiftMatrix\BitShiftMatrix.csproj", "{88306FD8-2FE1-44A5-A0AD-2C445EB977E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F897388C-5A17-4083-92B3-6C418221211E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F897388C-5A17-4083-92B3-6C418221211E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F897388C-5A17-4083-92B3-6C418221211E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88306FD8-2FE1-44A5-A0AD-2C445EB977E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88306FD8-2FE1-44A5-A0AD-2C445EB977E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88306FD8-2FE1-44A5-A0AD-2C445EB977E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88306FD8-2FE1-44A5-A0AD-2C445EB977E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
