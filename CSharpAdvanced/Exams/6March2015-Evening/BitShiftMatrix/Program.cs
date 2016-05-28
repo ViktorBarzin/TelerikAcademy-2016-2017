@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace BitShiftMatrix
 {
@@ -10,55 +11,73 @@ namespace BitShiftMatrix
     {
         static void Main(string[] args)
         {
-            int rowsCount = int.Parse(Console.ReadLine());
-            int colsCount = int.Parse(Console.ReadLine());
+            long rowsCount = long.Parse(Console.ReadLine());
+            long colsCount = long.Parse(Console.ReadLine());
 
-            int coeff = Math.Max(rowsCount, colsCount);
+            long coeff = Math.Max(rowsCount, colsCount);
             Console.ReadLine();
-            int[] codes = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            bool[,] visited = new bool[rowsCount,colsCount];
+            long[] codes = Console.ReadLine().Split(' ').Select(long.Parse).ToArray();
+            bool[,] visited = new bool[rowsCount, colsCount];
 
-            int row = rowsCount - 1;
-            int col = 0;
-            double sum = 1;
+            long row = rowsCount - 1;
+            long col = 0;
+            BigInteger sum = 0;
+            BigInteger currentCellValue = 1;
 
-            for(int i = 0; i < codes.Length; ++i)
+            for (int i = 0; i < codes.Length; ++i)
             {
-                int nextRow = codes[i] / coeff;
-                int nextCol = codes[i] % coeff;
+                long nextRow = codes[i] / coeff;
+                long nextCol = codes[i] % coeff;
 
-                int deltaRow = nextRow > row ? 1 : -1;
                 int deltaCol = nextCol > col ? 1 : -1;
 
-                while(col + deltaCol != nextCol)
+                while (col != nextCol)
                 {
-                    if (!visited[row,col])
+                    if (!visited[row, col])
                     {
-                        // 2^col * (rowsCount - 1 - row)
-                        sum += Math.Pow(2, col + rowsCount - 1 - row); // formula
+                        sum += currentCellValue;
                         visited[row, col] = true;
+                    }
+                    if (deltaCol > 0)
+                    {
+                        currentCellValue *= 2;
+                    }
+                    else
+                    {
+                        currentCellValue /= 2;
                     }
                     col += deltaCol;
                 }
 
-                while(row + deltaRow != nextRow)
+                int deltaRow = nextRow > row ? 1 : -1;
+
+                while (row != nextRow)
                 {
-                    if (!visited[row,col])
+                    if (!visited[row, col])
                     {
-                        sum += Math.Pow(2, col + rowsCount - 1 - row); // formula
+                        sum += currentCellValue;
                         visited[row, col] = true;
+                    }
+
+                    if (deltaRow < 0)
+                    {
+                        currentCellValue *= 2;
+                    }
+                    else
+                    {
+                        currentCellValue /= 2;
                     }
 
                     row += deltaRow;
                 }
             }
 
-            Console.WriteLine(sum);
-        }
+            if (!visited[row, col])
+            {
+                sum += currentCellValue;
+            }
 
-        private static bool IsInside(int[,] matrix, int row, int col)
-        {
-            return row < matrix.GetLength(0) && col < matrix.GetLength(1);
+            Console.WriteLine(sum);
         }
     }
 }
