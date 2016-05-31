@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Messages", "1.Messages\1.Messages.csproj", "{AF6CB407-59E3-477C-93CA-6A5966DF99C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.DancingMoves", "2.DancingMoves\2.DancingMoves.csproj", "{19CCA607-B2B7-4CFC-9EF5-24AB36491E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.SoupScript", "4.SoupScript\4.SoupScript.csproj", "{F767CCE9-C4C0-4574-8A8D-1EBEF0A88EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harry-Potter-4D", "Harry-Potter-4D\Harry-Potter-4D.csproj", "{A2B58DF1-A35A-4400-8AB6-8844ACD82885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF6CB407-59E3-477C-93CA-6A5966DF99C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6CB407-59E3-477C-93CA-6A5966DF99C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6CB407-59E3-477C-93CA-6A5966DF99C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6CB407-59E3-477C-93CA-6A5966DF99C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CCA607-B2B7-4CFC-9EF5-24AB36491E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CCA607-B2B7-4CFC-9EF5-24AB36491E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CCA607-B2B7-4CFC-9EF5-24AB36491E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CCA607-B2B7-4CFC-9EF5-24AB36491E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F767CCE9-C4C0-4574-8A8D-1EBEF0A88EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F767CCE9-C4C0-4574-8A8D-1EBEF0A88EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F767CCE9-C4C0-4574-8A8D-1EBEF0A88EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F767CCE9-C4C0-4574-8A8D-1EBEF0A88EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B58DF1-A35A-4400-8AB6-8844ACD82885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B58DF1-A35A-4400-8AB6-8844ACD82885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B58DF1-A35A-4400-8AB6-8844ACD82885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B58DF1-A35A-4400-8AB6-8844ACD82885}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
