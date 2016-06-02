@@ -8,7 +8,7 @@ function solve(params) {
 
     for (var i = 0; i < numbersCount; i += 1) {
         numbers[i] = +numbers[i]
-        transformed[ i] = numbers[i]
+        transformed[i] = numbers[i]
     }
 
     for (var k = 0; k < numberOfTransformations; k += 1) {
