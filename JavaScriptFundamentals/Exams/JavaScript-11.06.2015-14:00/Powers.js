@@ -70,3 +70,5 @@ function solve(params) {
 
     console.log(transformed.reduce(function(a, b) { return a + b; }, 0))
 }
+
+solve(process.argv.slice(2))
