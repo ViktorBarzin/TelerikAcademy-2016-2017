@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Problem1.Structure
 {
-    class Path
+    public class Path
     {
+        public List<Point3D> PathOfPoints { get; set; }
     }
 }
