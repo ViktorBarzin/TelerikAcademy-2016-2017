@@ -3,11 +3,10 @@
 	"configurations": [
 		{
 			"name": "Launch index.html with sourcemaps",
-			"type": "chrome",
+			"type": "node",
 			"request": "launch",
-			"file": "${workspaceRoot}/index.html",
-			"sourceMaps": true,
-			"webRoot": "${workspaceRoot}"
+			"program": "${workspaceRoot}/test2.js",
+			"sourceMaps": true
 		},
 		{
 			"name": "Launch localhost with sourcemaps",
