@@ -1,0 +1,19 @@
+Data types:
+	number
+	    number.toFixed -> string.format()
+	    new Number() -> cast to number
+	    number | 0 = Math.floor(number)
+	    ParseInt -> do kadeto moje
+	    | 0 -> cqloto
+	    + == parseFloat()
+
+	string
+	boolean
+	
+Loops
+	for in -> loops thourgh properties
+
+ 	&& ako lqvata e false -> dqsnata
+	|| ako dqsnata e false -> lqvata	
+
+
