@@ -1,8 +1,1 @@
-
-if(false){
-  var  a = 5;
-
-}
-
-console.log(a)
-
+document.write(<h1>ZDR</h1>)

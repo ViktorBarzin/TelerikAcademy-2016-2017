@@ -1,0 +1,11 @@
+myArray.filter(function(item){... return bool}) -> returns new array
+myArray.map(function(item){...}) -> apply a function to all elements; returns new array
+myArray.reduce(function(memory,current){..},initialMemValue) -> returns a single value
+myArray.sort(function(a,b){return a-b}) -> sorts original array
+myArray.forEach() -> is like .map(), but operates in place
+myArray.every(function(..){..return bool}) => true or false
+myArray.some() -> like .every but returns true if at least is true
+myArray.fill({name:'gosho'...},amount) -> fills array with [amount] objects
+
+
+map/filter(item,index,array)
