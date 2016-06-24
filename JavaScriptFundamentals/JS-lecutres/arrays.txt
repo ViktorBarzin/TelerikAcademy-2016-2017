@@ -1,0 +1,32 @@
+'new' is bad!
+2d array = [[],[]...]
+for (i of array) -> i holds value, not index!
+
+// forEach
+array.forEach(function(item){
+        console.log(item)
+        });
+item holds value like for of
+
+// Array methods
+push -> adds at the end; returns new array length
+pop -> remove at the end; returns the removed element
+
+unshift -> adds at begining;
+shift -> remove at begining; returns first element;
+
+reverse -> returns a new array !
+join -> similar to string.join -> array1.join(', ');
+concat -> returns a new array ; arr1.concat(arr2); = new arr which is concat of both arrays
+
+slice -> returns a new array ; arr1.slice(startIndex,endIndex);take endIndex - 1 as last element;
+
+splice -> works on current array! ;returns array of spliced elements;arr1.splice(startIndex,count,'replacements','replacements')
+
+
+insert element at position -> arr1.splice(index,0,'insertion');
+
+indexOf -> returns 1st position of the searched item - arr1.indexOf(element,[start from])
+Array.isArray(item) -> returns if item is array
+
+
