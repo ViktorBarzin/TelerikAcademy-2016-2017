@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2.BankAccounts
+namespace _1.StudentClass
 {
-    class Startup
+    public enum Faculty
     {
-        static void Main(string[] args)
-        {
-        }
+        Math = 1,
+        Physics = 2
     }
 }

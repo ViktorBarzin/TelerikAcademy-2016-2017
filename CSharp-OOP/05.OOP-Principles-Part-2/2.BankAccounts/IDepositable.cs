@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2.BankAccounts
 {
-    class Startup
+    interface IDepositable
     {
-        static void Main(string[] args)
-        {
-        }
+        void Deposit(decimal amount);
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2.BankAccounts
+namespace _3.RangeExceptions
 {
-    class Startup
+    class Program
     {
         static void Main(string[] args)
         {

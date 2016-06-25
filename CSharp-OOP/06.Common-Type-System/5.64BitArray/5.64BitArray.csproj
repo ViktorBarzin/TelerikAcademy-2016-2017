@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6918EEA1-2F70-480A-A0DA-DD9D3BF1FDE9}</ProjectGuid>
+    <ProjectGuid>{39C41C88-B4F9-4B92-9DC8-FD733262A74F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2.BankAccounts</RootNamespace>
-    <AssemblyName>2.BankAccounts</AssemblyName>
+    <RootNamespace>_5._64BitArray</RootNamespace>
+    <AssemblyName>5.64BitArray</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="Bank.cs" />
-    <Compile Include="CompanyCustomer.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="DepositAccount.cs" />
-    <Compile Include="IDepositable.cs" />
-    <Compile Include="IndividualCustomer.cs" />
-    <Compile Include="LoanAccount.cs" />
-    <Compile Include="MortageAccount.cs" />
+    <Compile Include="64BitArray.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

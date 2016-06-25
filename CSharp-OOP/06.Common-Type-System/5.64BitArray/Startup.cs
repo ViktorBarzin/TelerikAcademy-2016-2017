@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2.BankAccounts
+namespace _5._64BitArray
 {
     class Startup
     {
