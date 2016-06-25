@@ -9,3 +9,4 @@ myArray.fill({name:'gosho'...},amount) -> fills array with [amount] objects
 
 
 map/filter(item,index,array)
+max array element = Math.max.apply(null,array)
