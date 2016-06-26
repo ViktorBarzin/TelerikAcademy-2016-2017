@@ -12,9 +12,6 @@ namespace _1.Shapes
         {
         }
 
-        public override double CalculateSurface()
-        {
-            return this.Width * this.Height / 2;
-        }
+        public override double CalculateSurface() => this.Width * this.Height / 2;
     }
 }
